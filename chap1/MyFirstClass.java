@@ -1,3 +1,4 @@
+import java.util.Random;
 /**
     Java class structure
     @author hvhai
@@ -9,6 +10,9 @@ class MyFirstClass {
 
     public static void main(String... arg) {
         System.out.println("Hello world"); // Display the string
+        // Random
+        Random random = new Random();
+        System.out.println("Random int: " + random.nextInt(10)); 
     }
 
     public String getName() {
