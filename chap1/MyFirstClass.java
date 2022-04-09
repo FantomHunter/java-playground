@@ -3,7 +3,7 @@ import java.util.Random;
     Java class structure
     @author hvhai
  */
-class MyFirstClass {
+public class MyFirstClass {
     // Fields
     public int myIntField;
     String name;
