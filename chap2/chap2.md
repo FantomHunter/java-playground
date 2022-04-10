@@ -85,3 +85,25 @@ a value defined within a specific instance of an object
 - a *class variable* is one that is defined on the class level and shared among all instances of the class
 
 Instance and class variables do not require you to initialize them.
+
+Local variable *var* does not allow multiple declarations.
+
+~~~ java
+var a=2, b=3; // does not compiled
+var m = null; // does not compiled
+//but 
+var o = (String)null; // compiled
+~~~
+
+*var* is not a reserver word. But it is consider a reserver type name. A *reserve type name* mean it cannot be used to define a type like class, interface or enum.
+
+~~~ java
+class var{} // does not compile
+
+ // compiled
+class Var{
+    public void var(){
+        var var = 1;
+    }
+}
+~~~
