@@ -23,6 +23,11 @@ class LocalVariable {
         }
 
     }
+    public static void main(String[] args) {
+        int f = 0b11;
+        System.out.println(f);
+
+    }
 
 
 }
