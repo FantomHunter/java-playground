@@ -7,6 +7,8 @@ class Chap3 {
         chap3.promote();
         // float c =2.0/9;
         chap3.compoundOperator();
+        chap3.relationalOperator();
+
     }
 
     public void arithmeticOperator() {
@@ -32,5 +34,10 @@ class Chap3 {
         // sheep = sheep*goat // not compiled
         sheep *=goat; // compiled 
         System.out.println(sheep);
+    }
+
+    public void relationalOperator() {
+        System.out.println(null instanceof Object);
+        System.out.println(null instanceof String);
     }
 }

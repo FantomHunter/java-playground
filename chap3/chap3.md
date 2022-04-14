@@ -12,3 +12,28 @@ remainder value.
 2. If one is integral and the other is floating-point, java will promote the intergral to the floating-point
 3. In binary arithmetic operator, *byte, short, char* alway promote to int.
 4. After all promotion has occurred and the operands have the same data type, the resulting value will have the same data type as its promoted operands.
+
+## Relational operator
+
+|Operator|Description|
+|----|----|
+|<| less than|
+|<=| less than or equal|
+|>| greater than|
+|>=| greater than or equal|
+|a instance of b| if a and b has an instance of class, subclass of or implement of same interface|
+
+## Logical operator
+
+|Operator|Description|
+|----|----|
+|&| AND *true* only if both are *true*|
+|\|| OR *true* if one of the values is *true*|
+|^| XOR *true* only one value is *true* and the other is *false*|
+
+## Short circuit operator
+
+|Operator|Description|
+|----|----|
+|&&| AND *true* only if both are *true*, if the left value is *false*, the right value will not be evaluated|
+|\|\|| OR *true* if one of the values is *true*, if the left value is *true*, the righ value will not be evaluated |
