@@ -9,7 +9,7 @@ import pond.goose.Goose;
     @author codehunter
     command:
     javac -d classes pond/duck/*.java pond/goose/*.java pond/inland/*.java pond/shore/*.java pond/swan/*.java pond/Main.java
-    jar cfe pond.jar pond.Main classes/pond/duck/*.class classes/pond/goose/*.class classes/pond/inland/*.class classes/pond/shore/*.class classes/pond/swan/*.class classes/pond/Main.class
+    jar cfe pond.jar pond.Pool pond/duck/*.class pond/goose/*.class pond/inland/*.class pond/shore/*.class pond/swan/*.class pond/*.class
 */
 public class Pool{
     public static void main(String... args){
