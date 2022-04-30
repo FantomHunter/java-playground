@@ -1,34 +1,43 @@
 class Chap3 {
-    public static void main(String[] args){
-        int value = 0;
-        System.out.println(value);
-        System.out.println(value++);
-        System.out.println(++value);
-        System.out.println(value);
-        System.out.println(--value);
-        System.out.println(value);
-        System.out.println(value--);
-        int lion =3;
-        int tiger = ++lion*5/lion;
-
-        System.out.println("lion is: " + lion);
-        System.out.println("tiger is: " + tiger);
-        test();
+    public static void main(String[] arg){
+        int a[];
+        int[] b;
+        Chap3 chap3 = new Chap3();
+        chap3.arithmeticOperator();
+        chap3.promote();
+        // float c =2.0/9;
+        chap3.compoundOperator();
+        chap3.relationalOperator();
 
     }
 
-    public static void test(){
-        int bear = 5;
-        int dragon = ++bear + bear--;
-        System.out.println("bear is: " + bear);
-        System.out.println("dragon is: " + dragon);
+    public void arithmeticOperator() {
+        int a = 5;
+        int b = a++*2/--a;
+        int c = ++a*2/a--;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(a);
+    }
+    public void promote(){
+        short a = 5;
+        float b = 10;
+        double c = 4;
+        var z = a*b/c;
+        System.out.println(z);
     }
 
-    public int add(int a, int b){
-        return a + b;
+    public void compoundOperator() {
+        long goat = 10;
+        int sheep = 5;
+        // sheep = sheep*goat // not compiled
+        sheep *=goat; // compiled 
+        System.out.println(sheep);
     }
-    public void runAdd(){
-        int result = add(5,6);
-        System.out.println("5 + 6: " + result);
+
+    public void relationalOperator() {
+        System.out.println(null instanceof Object);
+        System.out.println(null instanceof String);
     }
 }

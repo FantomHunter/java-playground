@@ -65,4 +65,7 @@ javac -d classes packagea/*.java packageb/*.java
 java -cp classes packageb.ClassB
 java -classpath classes packageb.ClassB
 java --class-path classes packageb.ClassB
+jar cf JarExample.jar com/baeldung/jar/*.class
+jar cfe JarExample.jar com.baeldung.jar.JarExample com/baeldung/jar/*.class
+jar uf JarExample.jar com/baeldung/jar/JarExample.class
 ```
